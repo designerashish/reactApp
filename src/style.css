@@ -8,7 +8,7 @@ body {
   background-color: #292524;
   color: #fafaf9;
   font-family: "Sono", sans-serif;
-  padding: 48px 64px;
+  padding: 48px 64px 0;
 }
 
 
@@ -34,6 +34,28 @@ body {
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 48px;
+  height: calc(100VH - 48px - 68px - 40px );
+}
+
+section {
+  overflow:auto;
+  padding-bottom: 20px ;
+}
+
+section::-webkit-scrollbar {
+  width: 1em;
+  border-radius: 10px;
+}
+
+section::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+section::-webkit-scrollbar-thumb {
+  background-color: #111;
+  outline: 1px solid #222;
+    border-radius: 10px;
 }
 
 @media (max-width: 900px) {
@@ -123,6 +145,9 @@ h1 {
 .vote-buttons button:hover {
   background-color: #292524;
 }
+.vote-buttons button:disabled {
+  background-color: #000;
+}
 
 ul {
   list-style: none;
@@ -209,6 +234,18 @@ ul {
   font-weight: 600;
   font-size: 18px;
   margin-right: 18px;
+}
+
+.Loading {
+  font-size: 40px;
+  text-align: center;
+  margin-top:40px;
+}
+
+.disputed {
+  color: #ef4444;
+  font-weight: 600;
+  margin-right:10px;
 }
 
 @media (max-width: 1000px) {
