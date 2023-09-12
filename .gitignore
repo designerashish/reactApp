@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.js
+/.pnp.js
 token.txt
 
 # testing
@@ -22,3 +22,4 @@ token.txt
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+node_modules
